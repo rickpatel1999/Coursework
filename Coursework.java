@@ -9,6 +9,7 @@ public class coursework implements ActionListener
 	JFrame a = new JFrame();
 	JPanel panel = new JPanel();
 	JButton[] buttons = new JButton[12];
+	private int Xvalue = 0, FinalXValue = 11;
 	public coursework()
 	{
 	
@@ -63,3 +64,125 @@ public class coursework implements ActionListener
 		a.setVisible(true);
 	
 	}
+	public void actionPerformed(ActionEvent e)
+	{
+		ImageIcon empty = new ImageIcon("bart0.jpg"); //stores an empty image
+		Icon puzzle = new ImageIcon();
+
+	
+		if(e.getSource() == buttons[0]){
+			Xvalue = 0;
+			if (Validation() == true){          // Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 0;
+			}
+		}
+		if(e.getSource() == buttons[1]){
+			Xvalue = 1;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 1;
+			}
+		}
+		if(e.getSource() == buttons[2]){
+			Xvalue = 2;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 2;
+			}
+		}
+		if(e.getSource() == buttons[3]){
+			Xvalue = 3;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 3;
+			}
+		}
+		if(e.getSource() == buttons[4]){
+			Xvalue = 4;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 4;
+			}
+		}
+		if(e.getSource() == buttons[5]){
+			Xvalue = 5;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 5;
+			}
+		}
+		if(e.getSource() == buttons[6]){
+			Xvalue = 6;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 6;
+			}
+		}
+		if(e.getSource() == buttons[7]){
+			Xvalue = 7;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 7;
+			}
+		}
+		if(e.getSource() == buttons[8]){
+			Xvalue = 8;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 8;
+			}
+		}
+		if(e.getSource() == buttons[9]){
+			Xvalue = 9;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 9;
+			}
+		}
+		if(e.getSource() == buttons[10]){
+			Xvalue = 10;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 10;
+			}
+		}
+		if(e.getSource() == buttons[11]){
+			Xvalue = 11;
+			if (Validation() == true){	// Validation makes sure that the button is adjacent to the blank tile
+				puzzle = buttons[Xvalue].getIcon(); // Saves imaged of button clicked on
+				buttons[Xvalue].setIcon(empty); //Swaps empty image to image clicked on
+				buttons[FinalXValue].setIcon(puzzle); //Sets image that was empty to one selected	
+				FinalXValue = 11;
+			}
+		}
+	
+
+		
+
+	}
+
+
+		
