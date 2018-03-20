@@ -183,6 +183,76 @@ public class coursework implements ActionListener
 		
 
 	}
+		public boolean Validation()
+	{
+		if(Xvalue ==0)						// x=blank space. So if the statements of 1 and 4 are true then swap blank tile with images
+		{
+			if(FinalXValue ==1|| FinalXValue ==4)
+				return true;	
+		}
+	
+		else if(Xvalue ==1)
+		{
+			if(FinalXValue ==0|| FinalXValue ==2|| FinalXValue ==5)
+				return true;
+		}
+		else if (Xvalue ==2)
+		{
+			if(FinalXValue ==1|| FinalXValue ==3|| FinalXValue ==6)
+				return true;
+
+		}
+		else if (Xvalue ==3)
+		{
+			if(FinalXValue ==2|| FinalXValue ==7|| FinalXValue ==6)
+				return true;
+		}
+		else if (Xvalue ==4)
+		{
+			if(FinalXValue ==0|| FinalXValue ==5|| FinalXValue ==8)
+				return true;
+		}
+		else if (Xvalue ==5)
+		{
+			if(FinalXValue ==1|| FinalXValue ==4|| FinalXValue ==6|| FinalXValue ==9)
+				return true;
+		}		
+		else if (Xvalue ==6)
+		{
+			if(FinalXValue ==2|| FinalXValue ==5|| FinalXValue ==7|| FinalXValue ==10)
+				return true;
+		}		
+		else if (Xvalue ==7)
+		{
+			if(FinalXValue ==3|| FinalXValue ==6|| FinalXValue ==11)
+				return true;
+		}		
+		else if (Xvalue ==8)		
+		{	
+			if(FinalXValue ==4|| FinalXValue ==9)
+				return true;
+		}		
+		else if (Xvalue ==9)
+		{
+			if(FinalXValue ==8|| FinalXValue ==5|| FinalXValue ==10)
+				return true;
+		}		
+		else if (Xvalue ==10)
+		{
+			if(FinalXValue ==9|| FinalXValue ==6|| FinalXValue ==11)
+				return true;
+		}		
+		else if (Xvalue ==11)
+		{
+			if(FinalXValue ==6|| FinalXValue ==7|| FinalXValue ==10)
+				return true;
+	
+		}
+		
+		return false;
+		
+	}	
+}
 
 
 		
